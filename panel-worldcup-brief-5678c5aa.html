@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>世界杯 · 稳定入口与页面说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(145deg, #f7e9d7 0%, #f4d9b5 35%, #eac496 70%, #dbb586 100%);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            color: #2e241b;
+            line-height: 1.7;
+        }
+
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: #fffcf7;
+            border-radius: 48px 24px 48px 24px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 20px 40px -12px rgba(90, 60, 30, 0.25), 0 8px 16px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s;
+            backdrop-filter: blur(2px);
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 1.2rem;
+            }
+            .card {
+                padding: 2rem 1.5rem;
+                border-radius: 32px 16px 32px 16px;
+            }
+        }
+
+        .opening {
+            font-size: 1.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #5c3b24;
+            border-left: 6px solid #c9915c;
+            padding-left: 1.2rem;
+        }
+
+        .opening small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #7a5e45;
+            display: block;
+            margin-top: 0.35rem;
+        }
+
+        .intro {
+            margin: 1.8rem 0 2rem;
+            font-size: 1.08rem;
+        }
+
+        .intro p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin: 2.2rem 0 2.5rem;
+            background: #faf3ea;
+            padding: 1.6rem 1.8rem;
+            border-radius: 40px 12px 40px 12px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+            padding: 0.2rem 0;
+        }
+
+        .feature-item .emoji-bullet {
+            font-size: 1.4rem;
+            line-height: 1;
+            min-width: 1.8rem;
+            color: #a97546;
+        }
+
+        .feature-item .text {
+            font-size: 1rem;
+        }
+
+        .feature-item .text strong {
+            color: #5f3f28;
+            font-weight: 600;
+        }
+
+        .gentle-closing {
+            margin: 2.4rem 0 1.2rem;
+            padding-top: 0.6rem;
+            border-top: 2px dashed #dac2a8;
+            font-size: 1.02rem;
+        }
+
+        .gentle-closing p {
+            margin-bottom: 0.8rem;
+        }
+
+        .gentle-closing a {
+            color: #9f6e42;
+            text-decoration: none;
+            font-weight: 500;
+            background: #f2e4d4;
+            padding: 0.2rem 0.9rem;
+            border-radius: 36px;
+            transition: background 0.15s, color 0.15s;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+        }
+
+        .gentle-closing a:hover,
+        .gentle-closing a:focus-visible {
+            background: #dbb888;
+            color: #2f1f13;
+            border-bottom-color: #a56f3d;
+            outline: none;
+        }
+
+        .faq-hint {
+            margin-top: 2.2rem;
+            background: #efded0;
+            padding: 1.2rem 1.8rem;
+            border-radius: 30px 8px 30px 8px;
+            font-size: 0.98rem;
+            color: #3b2a1c;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.8rem 1.5rem;
+        }
+
+        .faq-hint span:first-child {
+            font-weight: 500;
+            background: #dbb07f;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            color: #281d12;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+        }
+
+        .faq-hint .question {
+            flex: 1 1 180px;
+        }
+
+        .faq-hint .question strong {
+            color: #482e1b;
+        }
+
+        .faq-hint .answer {
+            flex: 2 1 240px;
+            color: #3b2a1c;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6f5a48;
+            opacity: 0.75;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-note a {
+            color: #6a4b31;
+            text-decoration: none;
+            border-bottom: 1px dotted #b49474;
+        }
+
+        .footer-note a:hover {
+            border-bottom-style: solid;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="opening">
+        缓步入场，心有所向。
+        <small>—— 关于世界杯，一个值得信赖的起点</small>
+    </div>
+
+    <div class="intro">
+        <p>四年一次的盛事，总能牵动无数人的神经。无论你是在深夜的客厅独自观战，还是和三五好友围坐屏幕前欢呼，<strong>世界杯</strong>早已超越体育本身，成为一种共同的语言和记忆。正因如此，一个清晰、稳定的入口就显得格外重要——它让你不必在信息洪流里反复辨认方向。</p>
+        <p>很多人第一次打开与世界杯相关的页面时，最在意的不是花哨的动画，而是「能不能信任」「是不是我想要的」。我们希望这个站点从一开始就传递一种朴素的安全感：页面干净、结构直接、内容有据可查，没有多余的诱导，也不制造焦虑。在这里，<a href="https://panel-worldcup.com" style="color:#9f6e42; text-decoration:none; font-weight:500; background:#eee0d0; padding:0.1rem 0.8rem; border-radius:30px; white-space:nowrap;">世界杯</a>不仅仅是一个词，它意味着信息可以准确抵达，情绪可以自然安放。</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <span class="emoji-bullet">🧭</span>
+            <span class="text"><strong>稳定的锚点</strong> · 无论赛程如何更迭，这个页面始终作为可靠入口，不会因为流量高峰而变得杂乱难寻。</span>
+        </div>
+        <div class="feature-item">
+            <span class="emoji-bullet">📋</span>
+            <span class="text"><strong>克制的说明</strong> · 没有弹窗、悬浮广告或夸大标语，每段文字都经过斟酌，只讲必要的信息。</span>
+        </div>
+        <div class="feature-item">
+            <span class="emoji-bullet">🌐</span>
+            <span class="text"><strong>多端适配</strong> · 从手机到桌面，卡片布局自动调整，阅读体验始终温润一致。</span>
+        </div>
+        <div class="feature-item">
+            <span class="emoji-bullet">🔒</span>
+            <span class="text"><strong>直接的连接</strong> · 所有指向 <strong>世界杯</strong> 的链接均采用简洁路径，减少中间跳转，让你更快到达内容本身。</span>
+        </div>
+    </div>
+
+    <div class="gentle-closing">
+        <p>页面本身不制造热闹，它只是安静地站在那儿。当你需要了解赛程、回顾经典、或者只是找一个不嘈杂的窗口感受足球氛围时，<a href="https://panel-worldcup.com">世界杯</a> 这个入口始终为你保留。没有催促，没有花招，只有一种朴实的承诺：你看到的就是你需要的。</p>
+        <p>慢慢地，你会习惯这样的节奏——打开页面，找到想要的东西，然后回到自己的生活里。就像一粒种子落在合适的土壤，世界杯的精彩，也应当从一方简洁的界面开始生长。</p>
+    </div>
+
+    <div class="faq-hint">
+        <span>❓ 常见问题</span>
+        <div class="question"><strong>这个页面和世界杯官网是一回事吗？</strong></div>
+        <div class="answer">这里是独立的信息入口，提供稳定的访问引导和页面说明，帮助用户更顺畅地接触世界杯相关资源。所有链接指向清晰，不掺杂广告或第三方追踪。</div>
+    </div>
+
+    <div class="footer-note">
+        <span>页脚 · 一粒安静的种子 · </span>
+        <a href="https://panel-worldcup.com">世界杯</a>
+    </div>
+</div>
+</body>
+</html>
